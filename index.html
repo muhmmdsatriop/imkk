@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawa ke Indonesia Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jawa ke Indonesia Translator</h1>
+        <button id="settings">⚙</button>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <label for="inputText">Masukkan Teks:</label>
+            <textarea id="inputText" placeholder="Tulis teks di sini..."></textarea>
+            <div class="buttons">
+                <button id="listenInput">🔊 Dengarkan</button>
+                <button id="speakInput">🎤 Pengenalan Suara</button>
+                <button id="detectLang">🧠 Deteksi Bahasa</button>
+            </div>
+        </div>
+
+        <button id="translateBtn">Terjemahkan</button>
+        <div class="output-section">
+            <label for="outputText">Hasil Terjemahan:</label>
+            <textarea id="outputText" readonly></textarea>
+            <div class="buttons">
+                <button id="listenOutput">🔊 Dengarkan</button>
+                <button id="copyText">📋 Salin</button>
+                <button id="downloadText">⬇ Unduh</button>
+                <button id="shareText">📤 Bagikan</button>
+            </div>
+        </div>
+
+        <div class="voice-speed">
+            <p>Kecepatan Suara:</p>
+            <button id="slowSpeed">Lambat</button>
+            <button id="normalSpeed">Normal</button>
+            <button id="fastSpeed">Cepat</button>
+        </div>
+
+        <div class="history-section">
+            <h3>📜 Riwayat Terjemahan:</h3>
+            <ul id="history">
+                <li>Sugeng rawuh → Selamat datang</li>
+                <li>Matur nuwun → Terima kasih</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Tentang Aplikasi | Bantuan | Mode Gelap: 🌙</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
